@@ -1,0 +1,83 @@
+body
+{
+    background-color: antiquewhite;
+}
+.game
+{
+    width: 1000;
+    height: 400;
+    border-bottom: 1px solid #000;
+    margin: auto;
+}
+
+#kenny
+{
+    width: 60px;
+    height: 60px;
+    background-image: url("image/kenny.png");
+    background-size: 60px 60px;
+    position: relative;
+    top: 340px;
+    left: 40px;
+}
+
+#homeless
+{
+    width: 80px;
+    height: 80px;
+    background-image: url("image/homeless.png");
+    background-size: 80px 80px;
+    position: relative;
+    top:260px;
+    left: 960px;
+    animation: homelessMove 1.5s infinite linear;
+}
+
+@keyframes homelessMove
+{
+    0%
+    {
+        left: 960px;
+    }
+    100%
+    {
+        left: -40px;
+    }
+}
+
+.jump
+{
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump
+{
+    0%
+    {
+        top:300px
+    }
+    15%
+    {
+        top:250px
+    }
+    30%
+    {
+        top:200px
+    }
+    50%
+    {
+        top:150px;
+    }
+    70%
+    {
+        top:200px
+    }
+    85%
+    {
+        top:250px
+    }
+    100%
+    {
+        top:300px;
+    }
+}
