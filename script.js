@@ -1,5 +1,6 @@
 const kenny = document.getElementById("kenny");
 const homeless = document.getElementById("homeless");
+const hiddenText = document.querySelector(".text");
 
 document.addEventListener("keydown", function(event)
 {
@@ -25,6 +26,8 @@ let Alive = setInterval(function()
 
     if(homelessLeft < 80 && homelessLeft > 0 && kennyTop >= 340)
     {
-        alert("Game Over");
+        kenny.style.animationPlayState = "paused";
+        homeless.style.animationPlayState = "paused";
+        hiddenText.classList.remove("hidden");
     }
 }, 10);

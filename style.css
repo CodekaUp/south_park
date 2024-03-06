@@ -33,6 +33,16 @@ body
     animation: homelessMove 1.5s infinite linear;
 }
 
+.text
+{
+    text-align: center; 
+}
+
+.text.hidden
+{
+    display: none;
+}
+
 @keyframes homelessMove
 {
     0%
@@ -41,7 +51,7 @@ body
     }
     100%
     {
-        left: -40px;
+        left: -50px;
     }
 }
 
@@ -52,32 +62,11 @@ body
 
 @keyframes jump
 {
-    0%
-    {
-        top:300px
-    }
-    15%
-    {
-        top:250px
-    }
-    30%
-    {
-        top:200px
-    }
-    50%
-    {
-        top:150px;
-    }
-    70%
-    {
-        top:200px
-    }
-    85%
-    {
-        top:250px
-    }
-    100%
-    {
-        top:300px;
-    }
+    0%{top:300px;}
+    15%{top:250px;}
+    30%{top:200px;}
+    50%{top:150px;}
+    70%{top:200px;}
+    80%{top:250px;}
+    100%{top:300px;}
 }
